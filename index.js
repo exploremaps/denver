@@ -489,6 +489,18 @@ const mapview = Vue.component('mapview', {
        }
       }
       if (this.markergrouping == 'single') {
+        const sidebarOrder = ["Art", "Books", "ODO", "Library", "Food", "Exercise", "Tourism", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const tables = [{ name: "Address" }, { name: "State" }, { name: "Photo" }, { name: "Country" }];
+
+// Create a map of the desired order for efficient lookup
+const sortByObject = sidebarOrder.reduce((obj, item, index) => {
+    obj[item] = index;
+    return obj;
+}, {});
+
+// Sort the array using the index from the map
+overLayers = overLayers.sort((a, b) => sortByObject[a.name] - sortByObject[b.name]);
+
         this.layerControl = new L.Control.PanelLayers(null, overLayers, {
           compact: true,
           collapsed: true,
@@ -506,6 +518,7 @@ const mapview = Vue.component('mapview', {
       for (var i=0; i<this.postData.length; i++){
         const post = JSON.parse(JSON.stringify(this.postData[i], this.replaceNull));
         var icon = post.leafleticon;
+        console.log(icon)
         const categoryicon = post.categories && post.categories.length > 0 ? this.icons.findIndex(elem => post.categories.replace(" ", "_").toLowerCase() == elem.split('/').slice(-1)[0].split('.')[0].trim()) : -1;
         var iconindex = categoryicon > -1 ? categoryicon : categories.indexOf(post.categories);
         iconindex = iconindex >= this.icons.length || iconindex == -1 ? 0 : iconindex;
