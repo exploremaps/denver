@@ -166,7 +166,7 @@ const mapview = Vue.component('mapview', {
       <option aria-label="grouped" value="grouped">Clustered</option>
       <option aria-label="single" value="single">Not clustered</option>
     </select>
-    <button aria-label="get current location button" class="locationButton" v-on:click="locate()" v-if="sidebar.markers && (sidebar.route || apiUrl)">
+    <button aria-label="get current location button" class="locationButton" v-on:click="locate()">
       <i class="fa fa-location-arrow"></i>
     </button>
   </div>
