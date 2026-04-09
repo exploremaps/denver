@@ -12,4 +12,4 @@ Address: 2945 Larimer Street, Denver, CO 80205
 
 Hours: Monday, 6:30
 
-https://www.eventbrite.com/e/walking-club-tickets-1983893366464?aff=ebdssbdestsearch#location
+[https://www.eventbrite.com/e/walking-club-tickets-1983893366464?aff=ebdssbdestsearch#location](https://www.eventbrite.com/e/walking-club-tickets-1983893366464?aff=ebdssbdestsearch#location)

@@ -16,4 +16,4 @@ Address: 2210 California Street, Denver, CO 80205
 
 Hours: Sunday, 12:30-4:30pm
 
-https://www.eventbrite.com/e/spring-fling-cozy-craft-meetup-tickets-1983342520870
+[https://www.eventbrite.com/e/spring-fling-cozy-craft-meetup-tickets-1983342520870](https://www.eventbrite.com/e/spring-fling-cozy-craft-meetup-tickets-1983342520870)

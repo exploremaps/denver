@@ -10,5 +10,6 @@ desc: 2025-04-15
 ---
 Address: Denver Botanic Gardens 
 
-Hours: Wednesday, 9:15-10:15 am
+Hours: Wednesday, 5:30-6:30pm
 
+[https://www.botanicgardens.org/programs/evening-yoga](https://www.botanicgardens.org/programs/evening-yoga)

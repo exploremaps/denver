@@ -12,4 +12,4 @@ Address: 3899 N Jackson Street, Denver, Colorado 80205
 
 Hours: Sunday, 10-3pm
 
-https://denvercommunitymarket.com/
+[https://denvercommunitymarket.com/](https://denvercommunitymarket.com/)
