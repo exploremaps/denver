@@ -19,6 +19,8 @@ const searchview = Vue.component('searchview', {
     No results found
   </div>
 
+
+
   </div>`,
   data: function() {
     return {
@@ -169,6 +171,7 @@ const mapview = Vue.component('mapview', {
     <button aria-label="get current location button" class="locationButton" v-on:click="locate()">
       <i class="fa fa-location-arrow"></i>
     </button>
+    <input @input="event => inputCords(event.target.value)"/>
   </div>
   </div>`,
   data: function() {
@@ -275,6 +278,10 @@ const mapview = Vue.component('mapview', {
       const firstitem = geometry.coordinates[0];
       this.map.panTo([firstitem[1], firstitem[0]])
     },
+    inputCords: function(input) {
+      const e = {latlng: input.split(", "), accuracy: 0}
+      this.onLocationFound(e)
+    },
     cleanPostData: function() {
       const flatpostdata = _.flatten(this.postdata)
       for (var it=0; it<flatpostdata.length; it++){
@@ -347,6 +354,8 @@ const mapview = Vue.component('mapview', {
         this.map.removeLayer(this.current.position);
         this.map.removeLayer(this.current.accuracy);
       }
+      console.log(e.latlng)
+      console.log(e.accuracy)
 
       var radius = e.accuracy / 2;
 
