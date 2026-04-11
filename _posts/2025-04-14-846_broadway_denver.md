@@ -7,6 +7,7 @@ lat: 39.729975
 lng: -104.987026
 headertitle: Trivia
 desc: 2025-04-14
+hours: "7:30pm"
 ---
 Address: 846 Broadway Denver, CO 80203
 
