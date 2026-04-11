@@ -7,6 +7,7 @@ lat: 39.73209
 lng: -104.96006
 headertitle: Yoga
 desc: 2025-04-14
+hours: 12 - 1pm
 ---
 Address: Denver Botanic Gardens 
 
