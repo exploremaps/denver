@@ -7,6 +7,7 @@ lat: 39.767841
 lng: -104.973617
 headertitle: Yoga Colorado sushi co
 desc: 2025-04-13
+hours: 6pm
 ---
 Address: 3559 Larimer Street, Denver, CO 80205
 
