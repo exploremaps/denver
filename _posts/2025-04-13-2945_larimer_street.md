@@ -7,6 +7,7 @@ lat: 39.762175
 lng: -104.981054
 headertitle: Walking club
 desc: 2025-04-13
+hours: 6:30pm
 ---
 Address: 2945 Larimer Street, Denver, CO 80205
 
